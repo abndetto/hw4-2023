@@ -206,13 +206,12 @@ first div in the grid and place it in the grid. */
   grid-row-start:5;
 }
 
-.text-block{
+ /* Step 8: Write the selector/rule property to style the .text-block class. */
+
+ .text-block{
   justify-content:center;
   text-align:center;
 }
-
- /* Step 8: Write the selector/rule property to style the .text-block class. */
-
 
 /* Add your media query here */
 
