@@ -118,15 +118,16 @@ a:focus{
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
-.skip{
+.skip a{
   position:relative;
   top: -40px;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 
-.skip:focus{
-  
+.skip a:focus{
+  position:relative;
+  top: 60px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -219,7 +220,11 @@ first div in the grid and place it in the grid. */
 
   /* Step 9: Write the selector/rule property to style the nav element */
 
-
+  nav{
+    text-align:right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   /* Step 10: Write the selector/rule property to update the .container class */
 
@@ -232,44 +237,41 @@ first div in the grid and place it in the grid. */
 
   .container{
     display:grid;
-    grid-template: 50px auto 500px auto 50px;
-    row-gap: 15px;
-    align-items: center;
-    place-content:center;
+    grid-template-columns: 50px 1fr 500px 1fr 50px;
   }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
 
   .about{
-    grid-column: 3 / span 4;
+    grid-column: 3 / 5;
   }
 
   .clients{
-   grid-column: 3 / span 4;
+   grid-column: 3 / 5;
   }
 
   .method-image{
-    grid-column: 3 / span 4;
+    grid-column: 3 / 5;
   }
 
   .contact-image{
-   grid-column: 3 / span 4;
+   grid-column: 3 / 5;
   }
 
   .method{
-    grid-column: 2 / span 3;
+    grid-column: 2 / 4;
   }
 
   .contact{
-    grid-column: 2 / span 3;
+    grid-column: 2 / 4;
   }
 
   .about-image{
-    grid-column: 2 / span 3;
+    grid-column: 2 / 4;
   }
 
   .clients-image{
-    grid-column: 2 / span 3;
+    grid-column: 2 / 4;
   } 
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
