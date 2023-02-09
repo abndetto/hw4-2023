@@ -229,7 +229,7 @@ first div in the grid and place it in the grid. */
   /* Step 10: Write the selector/rule property to update the .container class */
 
    .container div:first-child{
-    -ms-grid-column-span:all;
+    grid-column:1 / 6;
     background-image: url(/images/header.jpg);
     background-repeat:no-repeat;
     overflow:auto;
@@ -237,7 +237,7 @@ first div in the grid and place it in the grid. */
 
   .container{
     display:grid;
-    grid-template-columns: 50px 1fr 500px 1fr 50px;
+    grid-template-columns: 50px auto 500px auto 50px;
   }
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
