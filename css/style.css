@@ -151,7 +151,7 @@ first div in the grid and place it in the grid. */
 
 .container div:first-child{
   grid-column:1 / span 3;
-  background-image: url("/images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-repeat:no-repeat;
 }
 
@@ -234,7 +234,7 @@ first div in the grid and place it in the grid. */
 
   .container div:first-child{
     grid-column:1 / 6;
-    background-image: url("/images/header.jpg");
+    background-image: url("../images/header.jpg");
     background-repeat:no-repeat;
   }
 
